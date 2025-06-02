@@ -1,0 +1,70 @@
+/* Basic styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fefae0;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  background-color: #f9c74f;
+  padding: 10px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav {
+  margin-top: 5px;
+}
+
+nav a {
+  margin: 0 10px;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section {
+  padding: 20px;
+}
+
+/* Grid container */
+#grid {
+  margin: 20px auto;
+  display: grid;
+  gap: 2px;
+  justify-content: center;
+}
+
+/* Grid cells */
+.cell {
+  width: 25px;
+  height: 25px;
+  border: 1px solid #ccc;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* Output box */
+#output {
+  background-color: #fff;
+  padding: 10px;
+  width: 90%;
+  max-width: 500px;
+  margin: 10px auto;
+  border: 1px solid #ccc;
+  white-space: pre-wrap;
+}
+
+/* Buttons */
+button {
+  margin: 5px;
+  padding: 8px 12px;
+  font-size: 16px;
+  cursor: pointer;
+}

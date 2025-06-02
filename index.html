@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Emoji Pixel Art Maker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>🎨 Emoji Pixel Art Maker</h1>
+    <nav>
+      <a href="#creator">Create</a>
+      <a href="#share">Share</a>
+    </nav>
+  </header>
+
+  <!-- Section: Create Art -->
+  <section id="creator">
+    <h2>Create Your Art</h2>
+
+    <label>
+      Choose Emoji:
+      <input type="text" id="emojiInput" maxlength="2" placeholder="🟥" />
+    </label>
+
+    <button onclick="getRandomEmoji()">🎲 Random Emoji</button>
+
+    <br><br>
+    <label>
+      Grid Size:
+      <select id="gridSize">
+        <option value="8">8 x 8</option>
+        <option value="10">10 x 10</option>
+        <option value="16">16 x 16</option>
+      </select>
+    </label>
+
+    <br><br>
+    <button onclick="makeGrid()">Generate Grid</button>
+    <button onclick="clearGrid()">Clear Grid</button>
+
+    <div id="grid"></div>
+  </section>
+
+  <!-- Section: Share Art -->
+  <section id="share">
+    <h2>Share Your Art</h2>
+    <button onclick="copyArt()">📋 Copy to Clipboard</button>
+    <pre id="output"></pre>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
